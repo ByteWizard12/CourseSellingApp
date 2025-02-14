@@ -4,23 +4,25 @@ const app = express();
 
 app.post("/user/signup" , async( req , res) => {
     res.json({
-        message : "signupendpoint"
+        message :"signupendpoint"
     });
 });
+
 app.post("/user/signin" , async( req , res) => {
     res.json({
         message : "signinendpoint"
     });
 });
+
 app.post("/user/purchase" , async( req , res) => {
 
 });
 
-app.get("/course/purchases" , async( req , res) => {
+app.get("/course/purchase" , async( req , res) => {
 
 });
 
-app.get("/courses" , async( req , res) => {
+app.get("/course/preview" , async( req , res) => {
 
 });
 
