@@ -1,5 +1,7 @@
 const {Router} = require("express");
 const courseRouter = Router();
+const {courseModel} = require("../db");
+
 
 courseRouter.get("/purchase" , async( req , res) => {
 
