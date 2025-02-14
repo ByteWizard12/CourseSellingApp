@@ -2,29 +2,8 @@ const express = required("express");
 const app = express();
 
 
-app.post("/user/signup" , async( req , res) => {
-    res.json({
-        message :"signupendpoint"
-    });
-});
-
-app.post("/user/signin" , async( req , res) => {
-    res.json({
-        message : "signinendpoint"
-    });
-});
-
-app.post("/user/purchase" , async( req , res) => {
-
-});
-
-app.get("/course/purchase" , async( req , res) => {
-
-});
-
-app.get("/course/preview" , async( req , res) => {
-
-});
+createUserRoutes(app);
+createCourseRoutes(app);
 
 
 
