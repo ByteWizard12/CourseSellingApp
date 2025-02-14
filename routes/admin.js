@@ -1,0 +1,28 @@
+const {Router} = require("express");
+const adminRouter = Router();
+
+adminRouter.post("/signup" , async( req , res) => {
+    res.json({
+        message :"signupendpoint"
+    });
+});
+
+adminRouter.post("/signin" , async( req , res) => {
+    res.json({
+        message : "signinendpoint"
+    });
+});
+
+adminRouter.post("/course" , async(req , res) => {
+
+})
+adminRouter.put("/course" , async(req , res) => {
+
+})
+adminRouter.get("/course/bulk" , async(req , res) => {
+
+})
+
+module.exports = {
+    adminRouter : adminRouter
+}
